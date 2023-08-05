@@ -6,8 +6,6 @@ window.addEventListener('load', function () {
     second: document.getElementById('second'),
   };
 
-  console.log(elemObject)
-
   const lastValueObject = {
     hour: null, minute: null, second: null
   }
@@ -16,7 +14,6 @@ window.addEventListener('load', function () {
     const lastValue = lastValueObject[elemId];
     if (value !== lastValue) {
       const elem = elemObject[elemId];
-      console.log(value, elem)
       lastValueObject[elemId] = value;
       elem.innerText = value.toString().padStart(2, '0');
     }

@@ -49,6 +49,10 @@ footer {
   cursor: pointer;
 }
 
+#a2hs {
+  display: none;
+}
+
 @media screen and (orientation: portrait) {
   .clock {
     flex-direction: column;

@@ -1,8 +1,8 @@
 'use strict';
 
-var cache_storage_name = 'digital-clock-pwa-1.1';
+var cache_storage_name = 'digital-clock-pwa-1.2';
 var start_page = 'index.html';
-var offline_page = 'offline.html';
+var offline_page = 'index.html';
 var first_cache_urls = [start_page, offline_page];
 var never_cache_urls = [/\/panel/, /\/custom-url/];
 
