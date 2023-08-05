@@ -10,9 +10,9 @@ var cache_storage_name = 'redcherry-pwa-1.0';
 var start_page = 'index.html';
 var offline_page = 'offline.html';
 var first_cache_urls = [start_page, offline_page];
-var never_cache_urls = [/\/private.html/, /\/panel/, /\/custom-url/];
+var never_cache_urls = [/\/panel/, /\/custom-url/];
 
-// Install 
+// Install
 self.addEventListener('install', function (e) {
 	console.log('PWA sw installation');
 	e.waitUntil(caches.open(cache_storage_name).then(function (cache) {
@@ -72,7 +72,7 @@ self.addEventListener('fetch', function (e) {
 	}));
 });
 
-// Check never cache urls 
+// Check never cache urls
 function check_never_cache_urls(url) {
 	if (this.match(url)) {
 		return false;

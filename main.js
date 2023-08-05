@@ -19,6 +19,5 @@ if ('serviceWorker' in navigator) {
 
         window.addEventListener('online', updateOnlineStatus);
         window.addEventListener('offline', updateOnlineStatus);
-
     });
 }
