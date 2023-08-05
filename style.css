@@ -49,6 +49,15 @@ footer {
   cursor: pointer;
 }
 
+.fullscreen-mode {
+  position: static;
+  top: 8px;
+  right: 8px;
+  height: 24px;
+  width: 24px;
+  content: url("/img/fullscreen-start.png");
+}
+
 @media screen and (orientation: portrait) {
   .clock {
     flex-direction: column;
