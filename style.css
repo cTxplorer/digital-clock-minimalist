@@ -34,6 +34,21 @@ body {
   font-size: 0.5em;
 }
 
+footer {
+  position: sticky;
+  bottom: 8px;
+  text-align: center;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: unset;
+  color: unset;
+  cursor: pointer;
+}
+
 @media screen and (orientation: portrait) {
   .clock {
     flex-direction: column;
